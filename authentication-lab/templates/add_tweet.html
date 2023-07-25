@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-    Great Job!
+    <form method="post" action="/add_tweet">
+
+        <p >
+            Please fill up your information below to add tweet.
+        </p>
+
+        <div>
+            <label>Title*</label>
+            <div>
+                <input type="title"  name="title" id="titleStr" required>
+            </div>
+        </div>
+
+        <div>
+            <label>Text*</label>
+            <div class="input-group">
+                <input type="text"  name="text" maxlength="280">
+            </div>
+        </div>
+    </form>
+    <br><a href="/all_tweets"><button>submet</button></a>
 </body>
 </html>
